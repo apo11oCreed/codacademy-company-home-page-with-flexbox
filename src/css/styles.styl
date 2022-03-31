@@ -1,0 +1,65 @@
+// @import "https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap"
+
+@import "https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,500&display=swap"
+
+@import "components/common/normalize"
+@import "components/theme/colors"
+@import "components/theme/typography"
+@import "components/common/mixins"
+@import "components/base"
+@import "components/theme/icomoon"
+@import "components/utilities"
+
+ul
+    padding-left:0
+    li
+        list-style-type none
+
+a
+    text-decoration none
+    color black
+
+.eyebrow
+    background-color black
+    padding 2px 0
+    font-weight 300
+    text-transform uppercase
+    display flex
+    justify-content center
+    p
+       color white
+       line-height 1
+header,
+main,
+footer
+    padding 0 3.175%
+
+header
+    nav
+        > ul
+            display:flex
+            flex-direction row
+            justify-content space-between
+            padding 10px 0
+            li
+                text-transform uppercase
+                &.site-logo
+                    width 250px
+                &.site-navigation
+                    > ul
+                        display flex
+                        flex 1 1
+                        flex-direction row
+                        padding 0 15px
+                        li
+                            font-size 12px
+                            padding 0 20px
+                &.site-utility
+                    display flex
+                    flex-direction row
+                    width 250px
+                    justify-content flex-end
+                    div
+                        font-size 20px
+                        margin-left 30px
+
