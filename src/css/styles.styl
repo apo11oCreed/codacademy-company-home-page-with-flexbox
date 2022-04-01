@@ -10,6 +10,13 @@
 @import "components/theme/icomoon"
 @import "components/utilities"
 
+h1
+    font-size 4rem
+
+p
+    font-size 1.6rem
+    line-height 1.45
+
 ul
     padding-left:0
     li
@@ -21,7 +28,7 @@ a
 
 .eyebrow
     background-color black
-    padding 2px 0
+    padding 0.2rem 0
     font-weight 300
     text-transform uppercase
     display flex
@@ -29,6 +36,7 @@ a
     p
        color white
        line-height 1
+
 header,
 main,
 footer
@@ -40,26 +48,64 @@ header
             display:flex
             flex-direction row
             justify-content space-between
-            padding 10px 0
+            padding 1rem 0
             li
                 text-transform uppercase
                 &.site-logo
-                    width 250px
+                    font-size 2rem
+                    width 25rem
                 &.site-navigation
                     > ul
                         display flex
                         flex 1 1
                         flex-direction row
-                        padding 0 15px
+                        padding 0 1.5rem
                         li
-                            font-size 12px
-                            padding 0 20px
+                            font-size 1.2rem
+                            padding 0 2rem
                 &.site-utility
                     display flex
                     flex-direction row
-                    width 250px
+                    width 25rem
                     justify-content flex-end
                     div
-                        font-size 20px
-                        margin-left 30px
+                        font-size 2rem
+                        margin-left 3rem
+
+main
+    .hero
+        bgimage_default('https://picsum.photos/1920/784',cover)
+        padding 20rem 0
+        margin 0 -3.175%
+        display flex
+        justify-content center
+        h1
+            color white
+            text-transform uppercase
+
+    .flex
+        display flex
+        flex-wrap wrap
+        flex-direction row
+        flex 1 1
+        >div
+            flex-grow 1
+            max-width 50%
+            img
+                height auto;
+                max-width 100%;
+                object-fit cover;
+                vertical-align bottom;
+        @media screen and (max-width: 76.7rem)
+            flex-direction column
+            flex-wrap nowrap
+            >div
+                max-width 100%
+
+[class*="zone"]
+    p
+        padding 4rem 0
+        ~/
+            display flex
+            justify-content center
 

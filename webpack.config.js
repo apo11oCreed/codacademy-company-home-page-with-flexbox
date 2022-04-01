@@ -43,9 +43,25 @@ const config = {
         use: [stylesHandler, "css-loader", "postcss-loader"],
       },
       {
-        test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
+        test: /\.(eot|svg|ttf|woff|woff2)$/i,
         type: "asset",
+        use: [{
+          loader: 'file-loader',
+          options: {
+            name: 'fonts/[name].[ext]',
+          },
+        }],
       },
+      {
+        test: /\.(png|jpg|gif|webp)$/i,
+        type: "asset",
+        use: [{
+          loader: 'file-loader',
+          options: {
+            name: 'img/[name].[ext]',
+          },
+        }],
+      }
 
       // Add your rules for custom modules here
       // Learn more about loaders from https://webpack.js.org/loaders/

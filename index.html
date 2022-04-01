@@ -1,58 +1,80 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Men&apos;s &amp; Women&apos;s Aviator Sunglasses | Randolph</title>
-    </head>
-    <body>
-        <div class="eyebrow">
-            <p>Free shipping &amp; returns on USA orders $99+*</p>
-        </div>
-      <header>
-          <nav><ul>
-            <li class="site-logo">
-                Randolph<sup>&reg;</sup>
-            </li>
-            <li class="site-navigation">
-                <ul>
-                    <li><a href="#">Aviator</a></li>
-                    <li><a href="#">Sunglasses</a></li>
-                    <li><a href="#">Collections</a></li>
-                    <li><a href="#">Our Story</a></li>
-                    <li><a href="#">Customer Service</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-            </li>
-            <li class="site-utility">
-                <div class="icon-search">
-                    <span class="sr">Search</span>
-                </div>
-                <div class="icon-person">
-                    <span class="sr">Account</span>
-                </div>
-                <div class="icon-cart2">
-                    <span class="sr">Cart</span>
-                </div>
-            </li>
-          </ul></nav>
-      </header>
-      <main><h1>This is my new website built using Webpack and Stylus</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></main>
-        <footer></footer>
-    </body>
-    
-    <script>
-        if ("serviceWorker" in navigator) {
-            window.addEventListener("load", () => {
-                navigator.serviceWorker
-                    .register("service-worker.js")
-                    .then((registration) => {
-                        console.log("Service Worker registered: ", registration);
-                    })
-                    .catch((registrationError) => {
-                        console.error("Service Worker registration failed: ", registrationError);
-                    });
-            });
-        }
-    </script>
+	<head>
+		<meta charset="utf-8" />
+		<title>Men&apos;s &amp; Women&apos;s Aviator Sunglasses | Randolph</title>
+	</head>
+	<body>
+		<div class="eyebrow">
+			<p>Free shipping &amp; returns on USA orders $99+*</p>
+		</div>
+		<header>
+			<nav>
+				<ul>
+					<li class="site-logo">Randolph<sup>&reg;</sup></li>
+					<li class="site-navigation">
+						<ul>
+							<li><a href="#">Aviator</a></li>
+							<li><a href="#">Sunglasses</a></li>
+							<li><a href="#">Collections</a></li>
+							<li><a href="#">Our Story</a></li>
+							<li><a href="#">Customer Service</a></li>
+							<li><a href="#">Blog</a></li>
+						</ul>
+					</li>
+					<li class="site-utility">
+						<div class="icon-search">
+							<span class="sr">Search</span>
+						</div>
+						<div class="icon-person">
+							<span class="sr">Account</span>
+						</div>
+						<div class="icon-cart2">
+							<span class="sr">Cart</span>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div class="hero zone_1">
+				<h1 class="uppercase">Elevate your everyday</h1>
+			</div>
+			<div class="zone_2">
+				<p class="uppercase">Engineered for expression</p>
+			</div>
+			<div class="zone_3 flex">
+				<div><img src="" alt="The fusion collection a not-so-quiet expression of the true you." /></div>
+				<div><img src="" alt="Shop the Fusion Collection." /></div>
+				<div><img src="" alt="Always authentic, always you. Shop The Aviator." /></div>
+				<div><img src="" alt="The Aviator product shot." /></div>
+			</div>
+			<div class="zone_4">
+				<h2 class="uppercase"><a href="#" class="underline">Explore Best Sellers</a></h2>
+			</div>
+			<div class="zone_5 flex">
+				<div><img src="" alt="The fusion collection a not-so-quiet expression of the true you." /></div>
+				<div><img src="" alt="Shop the Fusion Collection." /></div>
+			</div>
+            <div class="zone_6">
+				<h2 class="uppercase">Best Selling Styles</h1>
+			</div>
+		</main>
+		<footer></footer>
+	</body>
+
+	<script>
+		if ("serviceWorker" in navigator) {
+			window.addEventListener("load", () => {
+				navigator.serviceWorker
+					.register("service-worker.js")
+					.then((registration) => {
+						console.log("Service Worker registered: ", registration);
+					})
+					.catch((registrationError) => {
+						console.error("Service Worker registration failed: ", registrationError);
+					});
+			});
+		}
+	</script>
 </html>
