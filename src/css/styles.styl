@@ -1,7 +1,6 @@
 // @import "https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap"
 
-@import "https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,500&display=swap"
-
+@import 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap';
 @import "components/common/normalize"
 @import "components/theme/colors"
 @import "components/theme/typography"
@@ -9,6 +8,28 @@
 @import "components/base"
 @import "components/theme/icomoon"
 @import "components/utilities"
+
+@font-face {
+    font-family: 'Gt America'; 
+    src: url(https://cdn.shopify.com/s/files/1/0304/5264/6028/t/18/assets/GT-America-Standard-Regular.woff);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Ogg'; 
+    src: url(https://cdn.shopify.com/s/files/1/0304/5264/6028/t/18/assets/Ogg-Regular.woff);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Ogg Regular'; 
+    src: url(https://cdn.shopify.com/s/files/1/0304/5264/6028/t/18/assets/Ogg-Regular.woff);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
 
 h1
     font-size 4rem
@@ -48,6 +69,7 @@ header
             display:flex
             flex-direction row
             justify-content space-between
+            align-items center
             padding 1rem 0
             li
                 text-transform uppercase
@@ -59,6 +81,7 @@ header
                         display flex
                         flex 1 1
                         flex-direction row
+                        align-items center
                         padding 0 1.5rem
                         li
                             font-size 1.2rem
@@ -82,6 +105,8 @@ main
         h1
             color white
             text-transform uppercase
+            font-size 8rem
+            text-align center
 
     .flex
         display flex
@@ -93,18 +118,72 @@ main
             max-width 50%
             img
                 height auto;
-                max-width 100%;
-                object-fit cover;
-                vertical-align bottom;
+                max-width 100%
+                width 100%
+                object-fit cover
+                vertical-align bottom
         @media screen and (max-width: 76.7rem)
             flex-direction column
             flex-wrap nowrap
             >div
                 max-width 100%
 
+    .zone_2
+        h2
+            color #58495d
+            font-weight 400
+            letter-spacing 0.8rem
+
+    .zone_4,
+    .zone_8
+        h2
+            font-size 5rem
+            font-weight 400
+
+    .zone_5,
+    .zone_9
+        padding 1rem 14rem 4rem
+        display flex
+        flex-direction row
+        justify-content center
+        flex-wrap nowrap
+        >div
+            flex-grow 1
+            max-width 25%
+            padding 2rem 1rem
+            img
+                height auto;
+                max-width 100%;
+                object-fit cover;
+                vertical-align bottom;
+        @media screen and (max-width: 76.8rem)
+            flex-direction row
+            flex-wrap wrap
+            >div
+                max-width calc(50% - 2rem)
+
+    .zone_7
+        div:first-of-type
+            position relative
+            h2
+                position absolute
+                margin 0
+                bottom 4rem
+                left 50%
+                transform translateX(-50%)
+                font-size 2.2rem
+                font-weight 400
+
+    .zone_8
+        flex-direction column
+        align-items center
+
 [class*="zone"]
-    p
-        padding 4rem 0
+    margin 4rem 0
+    h2
+        font-size 2.4rem
+        line-height 4rem
+        margin 0
         ~/
             display flex
             justify-content center
